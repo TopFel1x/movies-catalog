@@ -83,6 +83,10 @@ export const HomePage = () => {
   return (
     <div>
       <h1>Фильмы</h1>
+      <Link to="/favorites">
+        <button style={{ margin: "1rem 0" }}>Перейти в избранное</button>
+      </Link>
+
       <Filters
         genres={genres}
         selectedGenres={selectedGenres}
