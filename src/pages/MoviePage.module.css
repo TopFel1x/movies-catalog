@@ -1,0 +1,86 @@
+body {
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.poster {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.text {
+  font-size: 1rem;
+  max-width: 800px;
+  padding-left: 40px;
+  line-height: 1.6;
+}
+
+.button {
+  align-self: center;
+  max-width: 200px;
+  color: #fafafa;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #3b3b3b;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  min-width: 280px;
+}
+
+.modal button {
+  margin: 12px 8px 0 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal button {
+  background-color: #405871;
+  color: white;
+}

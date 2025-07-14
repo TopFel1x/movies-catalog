@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 
 // My imports
 import { fetchMovies, fetchGenres } from "../api/movies"
@@ -99,7 +100,11 @@ export const HomePage = () => {
       {loading && <div>Загрузка...</div>}
       <div className={styles.container}>
         {movies.map((movie) => (
-          <div key={movie.id} className={styles.card}>
+          <Link
+            to={`/movie/${movie.id}`}
+            key={movie.id}
+            className={styles.card}
+          >
             <img
               className={styles.poster}
               src={
@@ -113,7 +118,7 @@ export const HomePage = () => {
             <h3 className={styles.title}>{movie.title}</h3>
             <div>Год: {movie.release_date?.slice(0, 4) || "—"}</div>
             <div>Рейтинг: {movie.vote_average || "—"}</div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
