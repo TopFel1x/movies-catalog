@@ -1,12 +1,12 @@
-import { useState } from "react"
 import "./App.css"
 
-function App() {
-  const [count, setCount] = useState(0)
+// Pages
+import { HomePage } from "./pages/HomePage"
 
+function App() {
   return (
     <>
-      <div>Felix</div>
+      <HomePage />
     </>
   )
 }
