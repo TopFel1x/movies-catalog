@@ -1,5 +1,6 @@
 import React from "react"
 import type { Genre } from "../types"
+import styles from "./Filters.module.css"
 
 type FiltersProps = {
   genres: Genre[]
@@ -28,9 +29,9 @@ export const Filters: React.FC<FiltersProps> = ({
   releaseYearEnd,
   setReleaseYearEnd,
 }) => (
-  <div>
-    <h2>Жанры</h2>
-    <div>
+  <div className={styles.filtersContainer}>
+    <div className={styles.filtersSection}>
+      <h2>Жанры</h2>
       {genres.map((genre) => (
         <label key={genre.id} style={{ marginRight: 10 }}>
           <input
@@ -51,7 +52,7 @@ export const Filters: React.FC<FiltersProps> = ({
       ))}
     </div>
 
-    <div style={{ marginTop: 16 }}>
+    <div className={styles.filtersSection}>
       <h2>Рейтинг</h2>
       <input
         type="number"
@@ -72,7 +73,7 @@ export const Filters: React.FC<FiltersProps> = ({
       />
     </div>
 
-    <div style={{ marginTop: 16 }}>
+    <div className={styles.filtersSection}>
       <h2>Год выпуска</h2>
       <input
         type="number"
