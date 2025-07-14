@@ -6,3 +6,8 @@ export type Movie = {
   vote_average: number
   genre_ids: number[] // Жанры фильма
 }
+
+export type Genre = {
+  id: number
+  name: string
+}
