@@ -5,7 +5,7 @@
 ## Установка
 
 ```bash
-git clone https://github.com/<user_name>/movies-catalog.git
+git clone https://github.com/TopFel1x/movies-catalog.git
 cd movies-catalog
 npm install
 ```
